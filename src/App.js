@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+  constructor(){
+    super();
+    this.state = {
+      txt: 'This is the state text'
+    }
+  }
+
+  update(e){
+    this.setState({txt: e.target.value});
+  }
+
+  render(){
+    let txt = this.state.txt;
+    return (
+      <div>
+        <Widget update={this.update.bind(this)} />
+        <h1>{this.state.txt}</h1>
+      </div>
+    )
+  }
 }
 
+
+const Widget = (props) =>
+<input type="text" onChange={props.update}/>
 export default App;

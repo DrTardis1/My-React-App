@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App txt="This is the prop text!"/>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

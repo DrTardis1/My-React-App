@@ -1,0 +1,33 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #2e2e2e;
+    color: white;
+    margin: 20px;
+}
+
+.socials-link {
+    text-decoration: none;
+    color: #0074D9;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-link .fa {
+    font-size: 2em;
+}
+
+.socials-link:hover {
+    color: #B3DBFF;
+}

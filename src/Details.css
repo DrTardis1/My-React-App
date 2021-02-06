@@ -1,0 +1,8 @@
+.details {
+    width: auto;
+    text-align: left;
+}
+
+.details table {
+    border-spacing: 10px;
+}

@@ -1,0 +1,20 @@
+.job {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+.dates {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.start-date {
+    width: 50%;
+}
+
+.end-date {}

@@ -2,6 +2,13 @@ import React from 'react';
 import './Job.css';
 
 class Job extends React.Component{
+
+    props = {
+        workplace : "workplace",
+        title : "title",
+        description : "description"
+    }
+
     render(){
         return(
             <div className="job">
@@ -25,6 +32,18 @@ class Job extends React.Component{
                 </div>
         )
     }
+
+    constructor(props){
+        super();
+    }
 }
+
+Job.defaultProps = {
+    workplace : "workplace", 
+    title : "title",
+    start : "1/1/1900",
+    end : "1/1/1900", 
+    description : "description"
+};
 
 export default Job;

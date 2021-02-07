@@ -28,6 +28,11 @@
     font-size: 2em;
 }
 
+.socials-circle:hover {
+    transform: scale(1.2);
+    transition: 100ms linear;
+}
+
 .socials-link:hover {
     color: #B3DBFF;
 }

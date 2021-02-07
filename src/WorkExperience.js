@@ -4,7 +4,7 @@ import Job from './Job';
 class WorkExperience extends React.Component{
     render(){
         return(
-            <div>
+            <div className="job-container">
                 <Job title={"Developer"}
                 workplace={"incubatorTANK"} 
                 start={"16th November, 2020"} 
@@ -18,6 +18,8 @@ class WorkExperience extends React.Component{
                 description={
                     "A typical day here involved me packing bags of fertilizer and other greenskeeping equipment/chemicals into a delivery van. On weekends, in addition to these regular responsibilities, I would also be required to complete odd jobs such as mowing lawns, or washing the van."
                 } />
+
+                <Job/>
             </div>
         )
     }

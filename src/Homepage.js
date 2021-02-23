@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
-import WorkExperience from './WorkExperience';
-import AboutMe from './AboutMe';
+import Stats from './Stats';
+import StrengthsAndWeaknesses from './StrengthsAndWeaknesses';
 
 
 class Homepage extends React.Component{
@@ -9,8 +9,8 @@ class Homepage extends React.Component{
         return (
           <div>
             <Header/>
-            <WorkExperience/>
-            <AboutMe/>
+            <Stats/>
+            <StrengthsAndWeaknesses/>
           </div>
         )
       }
